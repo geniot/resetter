@@ -2,7 +2,7 @@
 # Stage 1: Build the Go Application
 # =========================================
 FROM golang:latest AS resetter
-WORKDIR /resetter
+WORKDIR /reset
 COPY go.mod .
 COPY go.sum .
 RUN go mod download
